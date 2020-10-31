@@ -13,12 +13,27 @@ persons:[
 
   }
 
+changeNameHandler=()=>{
+
+this.setState({
+  
+  persons:[
+        {name:'subbu',age:24},
+        {name:'Gowri',age:22},
+        {name:'Revathi',age:23}]
+
+  });
+
+}
+
+
   render(){
    return(
   <div className='App'>
+  <button onClick={this.changeNameHandler}>change name</button>
   <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/>
    <Person name={this.state.persons[1].name} age={this.state.persons[1].age}/>
-
+<Person name={this.state.persons[2].name} age={this.state.persons[2].age}/>
   </div>
   );
 
