@@ -1,17 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Person from './Person/Person';
 
-function App(){
-  return(
-<div>
-<p>subbu</p>
+class App extends React.Component{
 
+  render(){
+   return(
+  <div className='App'>
+  <Person name='subrahmanyam'/>
 
-</div>);
+  </div>
+  );
 
-
-
+}
 }
 
 export default App;
+
